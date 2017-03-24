@@ -1,0 +1,45 @@
+Reviewed jason articles/POCs
+
+1) KNN implementation(from scratch) - 
+http://machinelearningmastery.com/tutorial-to-implement-k-nearest-neighbors-in-python-from-scratch/
+2) develop neural net using keras
+http://machinelearningmastery.com/tutorial-first-neural-network-python-keras/
+3) Grid search hyperparameters for deep learning keras (ongoing)
+URL - http://machinelearningmastery.com/grid-search-hyperparameters-deep-learning-models-python-keras/
+ a) to understand -> concept of hyperparameters
+ b) how is it significant
+ c) Examples
+    1) tune batch size and number of epochs
+        a) Batch size in iterative gradient descent(stochastic gradient descent) is the 
+           number of patterns shown to the network before the weights are updated.
+           Also optimizing training of the network -> patterns to read at a time and keep in memory.
+        b) No of epochs- no of times entire training dataset is shown to network during training
+           * networks sensitive to batch size - LSTM rnns and convolutional neural net
+        
+
+
+
+
+
+
+
+
+
+
+
+Key undertakings(in general)
+1) Deep learning is good on raw data like images, text, audio and similar. It can work on complex tabular data, but often feature engineering + xgboost can do better in practice.
+Keep adding layers/neurons (capacity) and training longer until performance flattens out.
+
+2) The term no of folds-> implies the number of times there is shift around the train/test data.
+eg in a dataset of 100 samples , we can try 80-train,20-test  , 90-train,10-test ,etc. Likewise
+the combinations tried to fit the model better is Fold cross validation term.So in this case
+3 Fold Cross Validation -> 3 sets of train/test data
+
+
+
+
+
+
+
+
